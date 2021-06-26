@@ -1,0 +1,45 @@
+.button {
+	background: var(--purple);
+	border: 2px solid var(--purple);
+	border-radius: 4px;
+	color: var(--white);
+	cursor: pointer;
+	font: var(--button);
+	letter-spacing: 1.25px;
+	padding-block: 17.5px;
+	padding-inline: 24px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.button.is-secondary {
+	background: unset;
+	color: var(--purple);
+}
+
+.button-container {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 16px;
+}
+
+.button-icon {
+	background: var(--white);
+	border: 2px solid var(--purple);
+	border-radius: 4px;
+	display: inline-block;
+	padding-block: 10px;
+	padding-inline: 10px;
+	text-decoration: none;
+}
+
+.button-icon img {
+	vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+	.button-container {
+		display: block;
+	}
+}

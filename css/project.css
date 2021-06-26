@@ -1,0 +1,36 @@
+.project {
+    font: var(--body1);
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-block: 40px;
+}
+
+.project-image {
+    text-align: center;
+}
+
+.project-image img {
+    max-inline-size: 100%;
+    max-block-size: 536px;
+}
+
+@media screen and (min-width: 768px) {
+    .project {
+        align-items: center;
+        display: flex;
+        gap: 29px;
+        padding-block: 80px;
+    }
+    .project-image,
+    .project-description {
+        flex: 1;
+    }
+
+    .project:nth-child(4n + 1) {
+        flex-direction: row-reverse;
+    }
+}
